@@ -17,8 +17,9 @@ body {
   /* for centering in horizontal axis */
 }
 .calculator {
-  max-width: 25%;
-  min-width: 25%;
+  /* max-width: 25%; */
+  width: 22%;
+  width: 300px;
   border-radius: 12px;
   /* background-color: aqua; */
   box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 2);
@@ -98,7 +99,8 @@ button:focus {
 /* media query:smartphone vertical */
 @media screen and (max-width: 600px) {
   .calculator {
-    width: 95%;
+    /* width: 95%; */
+    width: 65%;
   }
 }
 
