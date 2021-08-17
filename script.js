@@ -15,7 +15,7 @@ function sendNumberValue(number) {
     //   if current display value is 0 then replace it else add number
     const displayValue = calculatorDisplay.textContent;
     calculatorDisplay.textContent =
-      displayValue === "0" ? number : number + displayValue;
+      displayValue === "0" ? number : displayValue + number;
   }
 }
 
