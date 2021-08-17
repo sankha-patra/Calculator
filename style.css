@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
+  /* background: linear-gradient(to right, #56ccf2, #2f80ed); */
+  background: linear-gradient(to right, #f12711, #f5af19);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* for centering in horizontal axis */
+  align-items: center;
+
+  /* for centering in horizontal axis */
+}
+.calculator {
+  max-width: 25%;
+  min-width: 25%;
+  border-radius: 12px;
+  /* background-color: aqua; */
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 2);
+  background-color: #2c5364;
+}
+.calculator-display {
+  background: black;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+}
+.calculator-display:hover {
+  filter: brightness(200%);
+}
+/* buttons */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 100;
+  min-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(199, 199, 199);
+  box-shadow: 6px 6px 10px -5px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  filter: brightness(120%);
+  /* background-color: #646464; */
+}
+button:active {
+  transform: translateY(1.4px);
+}
+button:focus {
+  outline: none;
+}
+.operator {
+  color: white;
+  background-color: #646464;
+  font-size: 30px;
+}
+.clear {
+  background-color: rgb(167, 21, 21);
+
+  color: white;
+}
+.clear:hover {
+  background-color: #ff2626;
+  filter: brightness(110%);
+}
+.equal-sign {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  background-color: rgb(13, 206, 87);
+}
+.equal-sign:hover {
+  background-color: rgb(14, 235, 14);
+}
+
+.calculator-display h1 {
+  margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  overflow-x: auto;
+}
+/* media query:smartphone vertical */
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}
+
+/* custom-scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* /////////// */
